@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мастер72 — мастер на час в Тюмени</title>
+    <meta
+      name="description"
+      content="Мастер72 — мастер на час в Тюмени. Срочный выезд, понятная цена и заявка в 1 клик."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header reveal">
+        <div class="brand">
+          <div class="brand__mark" aria-hidden="true"></div>
+          <div class="brand__name">
+            <span>Мастер</span><span>72</span>
+          </div>
+        </div>
+        <nav class="top-nav" aria-label="Основная навигация">
+          <a href="#services">Услуги</a>
+          <a href="#prices">Прайс</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a class="button button--header" href="#lead-form">Оставить заявку</a>
+      </header>
+
+      <div class="contact-bar reveal">
+        <a class="contact-bar__phone" href="tel:+79995485124">+7 (999) 548-51-24</a>
+        <a class="contact-bar__hint" href="#lead-form">← звонок в 1 клик</a>
+      </div>
+
+      <main>
+        <section class="hero reveal">
+          <div class="eyebrow">Принимаем заявки — свободно 2 мастера</div>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <h1>Мастер на час для любых работ по дому</h1>
+              <p class="hero__subtitle">Срочный выезд по <span>Тюмени</span></p>
+              <p class="hero__text">
+                Один звонок — и мастер уже едет к вам. Называем цену до начала
+                работы. Платите только за выполненную работу.
+              </p>
+              <div class="hero-actions">
+                <a class="button button--primary" href="#lead-form">Вызвать мастера</a>
+                <a class="button button--ghost" href="#prices">Смотреть цены</a>
+              </div>
+            </div>
+
+            <aside class="hero-aside">
+              <div class="hero-badge">
+                <strong>15 минут</strong>
+                <span>среднее время ответа на заявку</span>
+              </div>
+              <div class="hero-badge">
+                <strong>Без навязывания</strong>
+                <span>обсуждаем только нужный объём работ</span>
+              </div>
+              <div class="hero-badge">
+                <strong>Оплата по факту</strong>
+                <span>после проверки результата на месте</span>
+              </div>
+            </aside>
+          </div>
+
+          <div class="hero-points">
+            <article class="point-card">
+              <div class="point-card__icon">⚡</div>
+              <div>
+                <h2>Выезд за полчаса</h2>
+                <p>Как правило выезжаем в течение получаса или в удобное время.</p>
+              </div>
+            </article>
+            <article class="point-card">
+              <div class="point-card__icon">📋</div>
+              <div>
+                <h2>Цена до начала работы</h2>
+                <p>Называем после осмотра. Без согласования к ремонту не приступаем.</p>
+              </div>
+            </article>
+            <article class="point-card">
+              <div class="point-card__icon">🔧</div>
+              <div>
+                <h2>Инструмент с собой</h2>
+                <p>Базовый расходник и инструмент мастер привозит заранее.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="trust reveal">
+          <div class="section-label">Почему нам доверяют</div>
+          <div class="trust-grid">
+            <article class="trust-card">
+              <strong>Работаем по квартире, дому и офису</strong>
+              <p>От мелкого ремонта до подключения техники и сложных бытовых задач.</p>
+            </article>
+            <article class="trust-card">
+              <strong>Понятный разговор без “сюрпризов”</strong>
+              <p>Сначала смотрим задачу, затем согласуем стоимость и только потом начинаем.</p>
+            </article>
+            <article class="trust-card">
+              <strong>Можно вызвать на сегодня</strong>
+              <p>Если мастер свободен, стараемся поставить заявку в ближайшее окно.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="lead reveal" id="lead-form">
+          <div class="section-label">Заявка</div>
+          <div class="lead__panel">
+            <div class="lead__head">
+              <h2>Вызвать мастера на дом</h2>
+              <p>Мастер перезвонит в течение 10 минут</p>
+            </div>
+
+            <form class="lead-form" novalidate>
+              <label>
+                <span>Телефон *</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  autocomplete="tel"
+                  required
+                  inputmode="tel"
+                  maxlength="18"
+                  placeholder="+7 (___) ___-__-__"
+                />
+              </label>
+              <label>
+                <span>Что нужно сделать?</span>
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Что сломалось или что нужно сделать — опишите кратко"
+                ></textarea>
+              </label>
+              <label class="lead-form__trap" aria-hidden="true">
+                <span>Не заполнять</span>
+                <input type="text" name="company" tabindex="-1" autocomplete="off" />
+              </label>
+              <button type="submit" class="button button--primary">
+                Вызвать мастера →
+              </button>
+              <p class="lead-form__status" aria-live="polite"></p>
+              <p class="lead-form__policy">
+                Нажимая, вы соглашаетесь с обработкой персональных данных
+              </p>
+            </form>
+
+            <div class="lead__foot">
+              Ваши данные в безопасности. <strong>Звоним только по делу.</strong>
+            </div>
+          </div>
+          <div class="lead-success" aria-hidden="true">
+            <div class="lead-success__icon">✓</div>
+            <h3>Заявка отправлена</h3>
+            <p>Мы получили ваш номер и скоро свяжемся с вами, чтобы уточнить детали.</p>
+          </div>
+        </section>
+
+        <section class="services reveal" id="services">
+          <div class="section-label">Что делаем</div>
+          <h2 class="section-title">Виды работ</h2>
+
+          <div class="services-list">
+            <article class="service-tile"><span>🚿</span>Сантехника</article>
+            <article class="service-tile"><span>⚡</span>Электрика</article>
+            <article class="service-tile"><span>🔩</span>Мелкий ремонт</article>
+            <article class="service-tile"><span>❄️</span>Кондиционеры</article>
+            <article class="service-tile"><span>🏠</span>Полы и потолки</article>
+            <article class="service-tile"><span>🪑</span>Сборка мебели</article>
+          </div>
+        </section>
+
+        <section class="prices reveal" id="prices">
+          <div class="section-label">Прайс</div>
+          <h2 class="section-title">Частые услуги</h2>
+
+          <div class="accordion">
+            <article class="accordion-item is-open">
+              <button class="accordion-trigger" type="button" aria-expanded="true">
+                <span class="accordion-trigger__index">01</span>
+                <span class="accordion-trigger__title">Сантехника</span>
+                <span class="accordion-trigger__arrow">▾</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="price-row"><span>Замена/ремонт крана или смесителя</span><strong>от 500 ₽</strong></div>
+                <div class="price-row"><span>Устранение течи трубы или соединения</span><strong>от 700 ₽</strong></div>
+                <div class="price-row"><span>Замена/установка унитаза</span><strong>от 1 500 ₽</strong></div>
+                <div class="price-row"><span>Установка счётчиков воды</span><strong>от 800 ₽</strong></div>
+                <div class="price-row"><span>Подключение стиральной/посудомоечной машины</span><strong>от 800 ₽</strong></div>
+                <div class="price-row"><span>Прочистка засора в трубах</span><strong>от 500 ₽</strong></div>
+                <div class="price-row"><span>Монтаж/замена водонагревателя</span><strong>от 1 500 ₽</strong></div>
+                <div class="price-row"><span>Прочие сантехнические работы</span><strong>по договорённости</strong></div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span class="accordion-trigger__index">02</span>
+                <span class="accordion-trigger__title">Электрика</span>
+                <span class="accordion-trigger__arrow">▾</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="price-row"><span>Замена розетки или выключателя</span><strong>от 400 ₽</strong></div>
+                <div class="price-row"><span>Установка светильника</span><strong>от 700 ₽</strong></div>
+                <div class="price-row"><span>Поиск неисправности</span><strong>от 1 000 ₽</strong></div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span class="accordion-trigger__index">03</span>
+                <span class="accordion-trigger__title">Мелкий ремонт</span>
+                <span class="accordion-trigger__arrow">▾</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="price-row"><span>Повесить полку, карниз, зеркало</span><strong>от 500 ₽</strong></div>
+                <div class="price-row"><span>Замена замка или ручки</span><strong>от 700 ₽</strong></div>
+                <div class="price-row"><span>Мелкий бытовой ремонт</span><strong>по договорённости</strong></div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span class="accordion-trigger__index">04</span>
+                <span class="accordion-trigger__title">Кондиционеры</span>
+                <span class="accordion-trigger__arrow">▾</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="price-row"><span>Чистка внутреннего блока</span><strong>от 1 500 ₽</strong></div>
+                <div class="price-row"><span>Диагностика</span><strong>от 1 000 ₽</strong></div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span class="accordion-trigger__index">05</span>
+                <span class="accordion-trigger__title">Полы и потолки</span>
+                <span class="accordion-trigger__arrow">▾</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="price-row"><span>Локальный ремонт покрытий</span><strong>от 1 200 ₽</strong></div>
+                <div class="price-row"><span>Монтаж плинтуса</span><strong>от 250 ₽/м</strong></div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span class="accordion-trigger__index">06</span>
+                <span class="accordion-trigger__title">Мебельщик</span>
+                <span class="accordion-trigger__arrow">▾</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="price-row"><span>Сборка шкафа или комода</span><strong>от 1 500 ₽</strong></div>
+                <div class="price-row"><span>Сборка кухни</span><strong>от 4 000 ₽</strong></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="process reveal">
+          <div class="section-label">Как работаем</div>
+          <h2 class="section-title">Просто и без сюрпризов</h2>
+
+          <div class="steps">
+            <article class="step-card">
+              <div class="step-card__emoji">📞</div>
+              <div class="step-card__number">01</div>
+              <h3>Заявка и звонок</h3>
+              <p>Оставляете заявку или звоните. Уточняем задачу и подбираем мастера.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-card__emoji">🚗</div>
+              <div class="step-card__number">02</div>
+              <h3>Выезд мастера</h3>
+              <p>Мастер выезжает, как правило, уже в течение получаса после обращения.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-card__emoji">🔎</div>
+              <div class="step-card__number">03</div>
+              <h3>Осмотр и цена</h3>
+              <p>Осматриваем фронт работ и называем точную стоимость до начала ремонта.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-card__emoji">✦</div>
+              <div class="step-card__number">04</div>
+              <h3>Работа и оплата</h3>
+              <p>После согласования приступаем к задаче. Оплата только по результату.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="reviews reveal">
+          <div class="section-label">Отзывы</div>
+          <h2 class="section-title">Что говорят клиенты</h2>
+          <div class="reviews-grid">
+            <article class="review-card">
+              <p>
+                “Нужно было срочно устранить течь под раковиной. Приехал быстро,
+                сразу сказал цену и всё сделал за один визит.”
+              </p>
+              <strong>Анна, Тюмень</strong>
+            </article>
+            <article class="review-card">
+              <p>
+                “Вызывали на мелкий ремонт по квартире. Удобно, что можно одним
+                списком отдать несколько задач.”
+              </p>
+              <strong>Илья, ЖК Новин</strong>
+            </article>
+            <article class="review-card">
+              <p>
+                “Подключили стиральную машину и поправили розетку. Всё спокойно,
+                чисто и без навязывания лишнего.”
+              </p>
+              <strong>Марина, Заречный</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="faq reveal" id="faq">
+          <div class="section-label">FAQ</div>
+          <h2 class="section-title">Частые вопросы</h2>
+          <div class="faq-list">
+            <article class="faq-item">
+              <h3>Сколько ждать мастера?</h3>
+              <p>Обычно связываемся в течение 10 минут и предлагаем ближайшее свободное время.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Точная цена известна заранее?</h3>
+              <p>По телефону даём ориентир, а точную стоимость называем после осмотра задачи.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Вы работаете только по мелким задачам?</h3>
+              <p>Нет. Берём как небольшие бытовые работы, так и комплексные задачи по квартире.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta reveal">
+          <div>
+            <h2>Другая задача или вопрос?</h2>
+            <p>Позвоните или оставьте заявку — обсудим по телефону.</p>
+          </div>
+          <a class="button button--primary" href="#lead-form">Оставить заявку</a>
+        </section>
+      </main>
+
+      <footer class="site-footer reveal">
+        <div class="site-footer__brand">
+          <div class="brand">
+            <div class="brand__mark" aria-hidden="true"></div>
+            <div class="brand__name">
+              <span>Мастер</span><span>72</span>
+            </div>
+          </div>
+          <p>Мастер72 — мастер на час в Тюмени. Выезд, диагностика, ремонт и бытовые работы по заявке.</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="tel:+79995485124">+7 (999) 548-51-24</a>
+          <a href="#services">Услуги</a>
+          <a href="#prices">Прайс</a>
+          <a href="#lead-form">Оставить заявку</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

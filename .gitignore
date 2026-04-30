@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+server-out.log
+server-err.log
+lt-out.log
+lt-err.log
+*.png
