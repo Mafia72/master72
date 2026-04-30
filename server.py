@@ -8,10 +8,12 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
 
 ROOT = Path(__file__).resolve().parent
 RATE_LIMIT_SECONDS = 60
+LOCAL_TIMEZONE = ZoneInfo("Asia/Yekaterinburg")
 recent_submissions = {}
 
 
@@ -41,7 +43,7 @@ def normalize_phone(raw_phone: str) -> str:
 
 
 def build_telegram_message(phone: str, message: str) -> str:
-    timestamp = datetime.now(timezone.utc).astimezone().strftime("%d.%m.%Y %H:%M")
+    timestamp = datetime.now(LOCAL_TIMEZONE).strftime("%d.%m.%Y %H:%M")
     details = message.strip() if message.strip() else "Не указано"
     return (
         "Новая заявка с сайта Мастер72\n\n"
