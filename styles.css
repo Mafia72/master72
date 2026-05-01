@@ -452,6 +452,32 @@ h1 {
   pointer-events: none;
 }
 
+.lead-form .lead-form__consent {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 14px 16px;
+  border: 1px solid rgba(47, 143, 78, 0.12);
+  border-radius: 14px;
+  background: rgba(47, 143, 78, 0.06);
+}
+
+.lead-form .lead-form__consent input {
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+  accent-color: var(--accent);
+}
+
+.lead-form .lead-form__consent span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .button--primary {
   min-height: 64px;
   border: 0;
@@ -462,7 +488,7 @@ h1 {
 
 .lead-form__policy {
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .lead-form__status {

@@ -108,8 +108,9 @@ leadForm?.addEventListener("submit", async (event) => {
   const phoneInput = form.querySelector('input[name="phone"]');
   const messageInput = form.querySelector('textarea[name="message"]');
   const trapInput = form.querySelector('input[name="company"]');
+  const consentInput = form.querySelector('input[name="consent"]');
 
-  if (!button || !status || !phoneInput || !messageInput || !trapInput) {
+  if (!button || !status || !phoneInput || !messageInput || !trapInput || !consentInput) {
     return;
   }
 
@@ -126,6 +127,12 @@ leadForm?.addEventListener("submit", async (event) => {
 
   if (trapInput.value.trim()) {
     setStatus(status, "Не удалось отправить заявку.", "error");
+    return;
+  }
+
+  if (!consentInput.checked) {
+    setStatus(status, "Подтвердите согласие на обработку данных.", "error");
+    consentInput.focus();
     return;
   }
 
