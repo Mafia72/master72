@@ -80,6 +80,8 @@ body::before {
   align-items: center;
   gap: 14px;
   min-width: 0;
+  color: inherit;
+  text-decoration: none;
 }
 
 .brand__mark {
@@ -478,6 +480,14 @@ h1 {
   text-transform: none;
 }
 
+.lead-form .lead-form__consent a,
+.privacy-content a {
+  color: var(--accent-deep);
+  font-weight: 700;
+  text-decoration-color: rgba(47, 143, 78, 0.35);
+  text-underline-offset: 3px;
+}
+
 .button--primary {
   min-height: 64px;
   border: 0;
@@ -759,6 +769,59 @@ h1 {
   gap: 10px;
 }
 
+.privacy-page {
+  position: relative;
+  z-index: 1;
+}
+
+.privacy-hero {
+  margin-top: 34px;
+  max-width: 820px;
+}
+
+.privacy-hero h1 {
+  max-width: 12ch;
+  margin-top: 16px;
+  font-size: 3.2rem;
+}
+
+.privacy-hero p,
+.privacy-content p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.privacy-updated {
+  font-weight: 700;
+  color: var(--accent-deep) !important;
+}
+
+.privacy-content {
+  display: grid;
+  gap: 18px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+  padding: 30px;
+  border: 1px solid rgba(47, 143, 78, 0.12);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow);
+}
+
+.privacy-content h2 {
+  margin: 18px 0 0;
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+.privacy-content h2:first-child {
+  margin-top: 0;
+}
+
+.privacy-content p {
+  margin: 0;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -877,6 +940,14 @@ h1 {
 
   .lead-success h3 {
     font-size: 1.2rem;
+  }
+
+  .privacy-hero h1 {
+    font-size: 2rem;
+  }
+
+  .privacy-content {
+    padding: 22px 18px;
   }
 }
 
